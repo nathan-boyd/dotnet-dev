@@ -1,0 +1,13 @@
+version: "3.3"
+services:
+  dotnet-dev:
+    build:
+      context: .
+    volumes:
+      - dotnet-dev-sync:/app
+    container_name: dotnet-dev
+
+# setup external sync
+volumes:
+  dotnet-dev-sync:
+    external: true

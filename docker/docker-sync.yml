@@ -1,0 +1,9 @@
+version: "2"
+
+options:
+  compose-file-path: 'docker-compose.yml'
+  verbose: true
+syncs:
+  dotnet-dev-sync:
+    src: '../app'
+    watch_args: '-v'
