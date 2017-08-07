@@ -6,4 +6,7 @@ options:
 syncs:
   dotnet-dev-sync:
     src: '../app'
+    sync_strategy: 'unison'
+    sync_args: '-prefer newer'
+    sync_prefer: 'default'
     watch_args: '-v'
